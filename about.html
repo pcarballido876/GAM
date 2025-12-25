@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAM Maderas SA</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="images/icono3.ico">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="header-top">
+            <div class="logo">
+                <img src="images/GAM-FBLA.png" class="logo-image">
+            </div>
+            <a href="contact.html" class="cta-button">PEDIR COTIZACION</a>
+        </div>
+    </div>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="about.html">QUIENES SOMOS</a></li>
+                <li><a href="business.html">LINEAS DE NEGOCIO</a></li>
+                <li><a href="quality.html">SYSTEMAS DE CALIDAD</a></li>
+                <li><a href="news.html">PORTAL DEL CLIENTE</a></li>
+                <li><a href="customers.html">NUESTRO EQUIPO</a></li>
+                <li><a href="contact.html">CONTACTANOS</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+
+
+
+
+
+<main>
+
+<section class="about">
+  <div class="container">
+    <h2 class="section-title">Quienes somos</h2>
+
+    <div class="about-content">
+      <div class="about-text">
+        <h2>Proveedor líder de maderas del norte argentino <i class="fa-solid fa-certificate"></i></h2>
+        <p><strong>GAM Maderas SA.</strong> es un aserradero ubicado en Tartagal, Salta, especializado en la <b>producción, procesamiento y comercialización de maderas duras locales</b>, con foco en calidad constante, trazabilidad y cumplimiento normativo.</p>
+		<p>Abastecemos a clientes en todo el país, adaptando cada entrega a los <b>requerimientos técnicos y productivos de cada sector</b>, desde la construcción y la carpintería hasta el uso rural e industrial.</p>
+		<p><strong>Cobertura nacional. Operación transparente. Logística ágil.</strong></p>
+      </div>
+
+      <div class="about-image">
+        <img src="images/aserradero-1.jpeg" alt="Tabla2">
+      </div>
+    </div>
+
+    <div class="values-grid">
+      <div class="value-card">
+        <h3><i class="fa-solid fa-flag-checkered"></i> Misión</h3>
+        <p>Suministrar maderas de origen local con calidad uniforme, plazos confiables y procesos responsables, acompañando las necesidades productivas de nuestros clientes en cada etapa.</p>
+      </div>
+      <div class="value-card">
+        <h3></i><i class="fa-solid fa-binoculars"></i> Vision</h3>
+        <p>Consolidarnos como un socio estratégico de suministro maderero a nivel nacional, reconocido por nuestra seriedad operativa, conocimiento del recurso forestal y capacidad de respuesta.</p>
+      </div>
+      <div class="value-card">
+        <h3><i class="fa-solid fa-scale-balanced"></i> Valores</h3>
+        <p>Integridad en cada operación y relación comercial.<br>
+		Calidad como estándar, no como promesa.<br>
+		Cumplimiento normativo, técnico y logístico.<br>
+		Rapidez con planificación y control.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Testimonials Section with Sliding Cards and Counters -->
+	<section class="testimonials-section" style="padding: 60px 0; background: #f5f7fa;">
+		<div class="container" style="max-width: 1100px; margin: auto;">
+		<h2 style="text-align: center; font-size: 32px; margin-bottom: 30px;">Que dicen nuestros clientes <i class="fa-solid fa-handshake"></i></h2>
+
+
+		<!-- Slider Wrapper -->
+		<!--<div class="slider" style="display: flex; overflow-x: auto; gap: 20px; scroll-snap-type: x mandatory; padding-bottom: 10px;">
+		<div class="testimonial-card" style="min-width: 300px; background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); scroll-snap-align: start;">
+		<p >"Excellent support and quick turnaround. VENTO always delivers."></p>
+		<h4>- MRO Supplier</h4>
+		</div>
+
+
+		<div class="testimonial-card" style="min-width: 300px; background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); scroll-snap-align: start;">
+		<p>“Reliable, fast, and professional. An ideal partner for aircraft components.”</p>
+		<h4 class="author">- MRO Supplier</h4>
+		</div>
+
+
+		<div class="testimonial-card" style="min-width: 300px; background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); scroll-snap-align: start;">
+		<p>“Their global network really shortens lead times. Highly recommended.”</p>
+		<h4>- Fleet Manager</h4>
+		</div>
+		
+		
+	</div>-->
+	
+	<!-- Testimonials Section: tarjetas -->
+	
+	
+	<div class="testimonial-wrapper">
+	  <div class="testimonial-card" id="testimonial-card">
+		<div class="story-bar"></div>
+		<p id="testimonial-text"></p>
+		<h4 id="testimonial-author"></h4>
+	  </div>
+	</div>
+	
+	
+	<!-- Counters Section -->
+	<div class="counters" style="display: flex; justify-content: space-around; margin-top: 60px; text-align: center;">
+		<div>
+		<h3 id="counter1" style="font-size: 40px; margin: 0;">0</h3>
+		<p><b><i class="fa-solid fa-boxes-stacked"></i> m³ de madera procesada</b><br>Experiencia acumulada en producción y abastecimiento.</p>
+		</div>
+		<div>
+		<h3 id="counter2" style="font-size: 40px; margin: 0;">0</h3>
+		<p><b><i class="fa-solid fa-truck-fast"></i> Entregas realizadas</b><br>Proveyendo a nuestros clientes en todo el país.</p>
+		</div>
+		</div>
+	</div>
+	</section>
+
+
+</main>
+
+
+
+
+<!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="business.html">Business Lines</a></li>
+                        <li><a href="quality.html">Quality Systems</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="news.html">Complete payments for approved transactions</a></li>
+                        <li><a href="news.html">request quotations</a></li>
+                        <li><a href="news.html">submit surplus inventories for evaluation</a></li>
+                        <li><a href="business.html">Business Lines</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>Address: Vento Aviation | 2001 57th street, Brooklyn NY 11204</li>
+                        <li>Telephone: +1 929-425-0075</li>
+                        <li>Email: website@ventoaviation.com</li>
+                        <li>Schedule: Monday-Friday 8:00-18:00</li>
+						<li>
+						  <a href="https://www.linkedin.com/company/vento-aviation/" target="_blank" aria-label="Vento Aviation LinkedIn">
+							<i class="fa-brands fa-linkedin"></i> vento-aviation
+						  </a>
+						</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Vento Aviation. All rights reserved | Designed by <B>@fatcarba</B>.</p>
+            </div>
+        </div>
+    </footer>
+	
+	<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  function animateCounter(id, target) {
+    let count = 0;
+    const speed = target / 200;
+
+    const update = () => {
+      count += speed;
+      if (count < target) {
+        document.getElementById(id).textContent =
+          Math.floor(count).toLocaleString();
+        requestAnimationFrame(update);
+      } else {
+        document.getElementById(id).textContent =
+          target.toLocaleString();
+      }
+    };
+
+    update();
+  }
+
+  const counters = document.querySelector('.counters');
+
+  if (!counters) return;
+
+  const observer = new IntersectionObserver(entries => {
+    if (entries[0].isIntersecting) {
+      animateCounter('counter1', 12000);
+      animateCounter('counter2', 148);
+      observer.disconnect();
+    }
+  }, { threshold: 0.4 });
+
+  observer.observe(counters);
+
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const testimonials = [
+    {
+      text: "Madera pareja, bien clasificada y entregada en tiempo. Eso hoy vale oro.",
+      author: "- Empresa constructora"
+    },
+    {
+      text: "Cumplen con las medidas, el secado y los plazos. Se nota que conocen el oficio.",
+      author: "- Carpintería industrial"
+    },
+    {
+      text: "Buen producto y logística ordenada. Para nosotros, un proveedor confiable.",
+      author:  "- Productor rural"
+    },
+	{
+      text: "La calidad es consistente entre lotes, algo clave para nuestra producción.",
+      author:  "- Fábrica de aberturas"
+    },
+	{
+      text: "Buena madera, bien trabajada y sin sorpresas en la entrega.",
+      author:  "- Maestro carpintero"
+    },
+	{
+      text: "Postes y varillas firmes, bien dimensionados y listos para usar.",
+      author:  "- Establecimiento agropecuario"
+    },
+  ];
+
+  const card = document.getElementById("testimonial-card");
+  const textEl = document.getElementById("testimonial-text");
+  const authorEl = document.getElementById("testimonial-author");
+  const bar = document.querySelector(".story-bar");
+
+  let index = 0;
+  const duration = 4000;
+
+  function showTestimonial(i) {
+    // ocultar tarjeta
+    card.classList.add("hide");
+    card.classList.remove("show");
+
+    setTimeout(() => {
+      textEl.textContent = "“" + testimonials[i].text + "”";
+      authorEl.textContent = testimonials[i].author;
+
+      // reset barra
+      bar.style.width = "0%";
+      bar.animate(
+        [{ width: "0%" }, { width: "100%" }],
+        { duration: duration, easing: "linear" }
+      );
+
+      // mostrar tarjeta nueva
+      card.classList.remove("hide");
+      card.classList.add("show");
+
+    }, 400);
+  }
+
+  showTestimonial(index);
+
+  setInterval(() => {
+    index = (index + 1) % testimonials.length;
+    showTestimonial(index);
+  }, duration);
+
+});
+
+</script>
+	
+	
+	
+	</body>
+</html>
