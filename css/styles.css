@@ -1518,3 +1518,138 @@
         right: 20px;
     }
 }
+
+/* =========================================================
+   OPTIMIZACIÓN PARA MÓVILES CON MENÚ HAMBURGUESA
+   ========================================================= */
+
+/* Ocultamos el botón en PC */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    padding: 15px;
+    background-color: #2c3e50; /* Mismo color que el menú */
+}
+
+@media (max-width: 768px) {
+    /* 1. Evitar scroll horizontal */
+    body, html {
+        overflow-x: hidden;
+    }
+
+    /* 2. Anular el header fijo de la PC SOLO para el celular */
+    header {
+        position: relative !important;
+    }
+
+    /* 3. Quitar el margen del main para que no quede un hueco */
+    main {
+        margin-top: 0 !important;
+    }
+
+    /* 4. El Header en celular */
+    .header-top {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .logo-image {
+        height: 60px;
+        margin-bottom: 10px;
+    }
+
+    .header-actions {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .social-links {
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .social-links a {
+        font-size: 28px;
+    }
+
+    .cta-button {
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    /* 5. EL MENÚ HAMBURGUESA */
+    .menu-toggle {
+        display: block; /* Mostramos el botón de las 3 rayitas */
+    }
+
+    nav#nav-menu {
+        display: none; /* Ocultamos el menú completo por defecto */
+        width: 100%;
+    }
+
+    nav#nav-menu.active {
+        display: block; /* Lo mostramos cuando el usuario hace clic */
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    nav ul li {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #34495e;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    /* 6. El Hero ajustado */
+    .hero {
+        margin-top: 0 !important; 
+        padding: 40px 20px 60px 20px !important; 
+        height: auto;
+        min-height: 80vh;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero-cta {
+        width: 100%;
+        display: block;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    /* 7. Las tarjetas (Módulos) */
+    .modules-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* 8. Botón de WhatsApp flotante */
+    .whatsapp-float {
+        width: 55px;
+        height: 55px;
+        font-size: 30px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
