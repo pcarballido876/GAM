@@ -244,27 +244,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   
   
-    /* =========================
-     MENÚ HAMBURGUESA (MÓVIL)
-  ========================= */
-  const mobileMenuBtn = document.getElementById('mobile-menu');
-  const navMenu = document.getElementById('nav-menu');
-
-  if (mobileMenuBtn && navMenu) {
-    mobileMenuBtn.addEventListener('click', () => {
-      navMenu.classList.toggle('active');
-      
-      // Cambiar icono de rayitas a una "X" cuando está abierto
-      const icon = mobileMenuBtn.querySelector('i');
-      if (navMenu.classList.contains('active')) {
-        icon.classList.remove('fa-bars');
-        icon.classList.add('fa-xmark');
-      } else {
-        icon.classList.remove('fa-xmark');
-        icon.classList.add('fa-bars');
-      }
-    });
-  }
+   
     /* =========================
      MENÚ HAMBURGUESA
   ========================= */
